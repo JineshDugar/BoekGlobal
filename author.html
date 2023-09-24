@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you a Author?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header dff">
+        <a href="index.html">
+            <div class="web_name dff">
+                <img src="logo.png" alt="Logo" class="logo">
+                Boek Global
+            </div>
+        </a>
+        <div class="web_items_container df-ai">
+            <div class="web_item dff" id="web_item1">
+                <a href="index.html" class="web_item_link dff" id="web_item_link1">
+                    Home
+                    <span class="web_span web_span1"></span>
+                </a>
+            </div>
+            <div class="web_item dff" id="web_item2">
+                <a href="#" class="web_item_link dff" id="web_item_link2">
+                    About
+                    <span class="web_span web_span2"></span>
+                </a>
+            </div>
+            <div class="web_item dff" id="web_item3">
+                <a href="#" class="web_item_link dff" id="web_item_link3">
+                    Shop
+                    <span class="web_span web_span3"></span>
+                </a>
+            </div>
+            <div class="web_item dff" id="web_item4">
+                <a href="#" class="web_item_link dff" id="web_item_link4">
+                    Contact
+                    <span class="web_span web_span4"></span>
+                </a>
+            </div>
+            <div class="web_item dff" id="web_item5">
+                <a href="author.html" class="web_item_link dff" id="web_item_link5">
+                    Are You a Author ?
+                    <span class="web_span web_span5"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="web_page author container">
+        <h1 class="author_head df-ai">Author Verification</h1>
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Full Legal Name</label>
+                <input type="text" class="form-control" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email - ID</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Tax Identification Number</label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Past Publication List</label>
+                <input type="file" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Social Media Links</label>
+                <input type="text" class="form-control my-2" id="inputAddress1" placeholder="facebook.com/">
+                <input type="text" class="form-control my-2" id="inputAddress2" placeholder="x.com/">
+                <input type="text" class="form-control my-2" id="inputAddress3" placeholder="linkedin.com/">
+                <input type="text" class="form-control my-2" id="inputAddress4" placeholder="instagram.com/">
+                <input type="text" class="form-control my-2" id="inputAddress4" placeholder="youtube.com/">
+                <input type="text" class="form-control my-2 mb-4" id="inputAddress5" placeholder="Others">
+            </div>
+            <div class="col-12 my-3 dff">
+                <input class="form-check-input checkBox" type="checkbox" value="" id="flexCheckChecked12">
+                <label class="form-check-label checkBoxContent mx-4" for="flexCheckChecked12">
+                    <b>*</b> I confirm that the information provided above is correct to the fullest of my knowledge and I agree to face legal consequences if the information is found out to be wrong at a later stage.
+                </label>
+            </div>
+            <div class="col-12 my-2">
+                <button type="submit" class="btn btn-primary" onclick="verifyRequest()" id="verify" disabled>Verify</button>
+            </div>
+    <script>
+        // JavaScript to enable/disable the "Verify" button
+        const checkbox12 = document.getElementById("flexCheckChecked12");
+        const verifyButton = document.getElementById("verify");
+
+        checkbox12.addEventListener("change", function() {
+            if (checkbox12.checked) {
+                verifyButton.removeAttribute("disabled");
+            } else {
+                verifyButton.setAttribute("disabled", "true");
+            }
+        });
+        function verifyRequest() {
+            // Display a confirmation box
+            const confirmation = confirm("Please make sure all the details are completely filled and are correct. Empty fields or wrong information will lead to the cancellation of your verification request");
+            
+            // If the user confirms, show the prompt message
+            if (confirmation) {
+                const message = "Your Request has been submitted. Our team of experts is upon it. We'll get back to you within 5 working days";
+                alert(message);
+            }
+        }
+
+    </script>
+            <span class="webpage_divider my-4"></span>
+            <h1 class="author_head df-ai">Book To Be Published</h1>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Name Of The Book</label>
+                <input type="text" class="form-control" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputDropDown4" class="form-label">Genre Of The Book</label>
+                <div class="dropdown df-ai" id="inputDropDown4">
+                    <button class="btn dropdown-toggle btn_dropdown df-ai" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Romantic
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Romantic</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasy </a></li>
+                        <li><a class="dropdown-item" href="#">Horror</a></li>
+                        <li><a class="dropdown-item" href="#">Science-Fiction</a></li>
+                        <li><a class="dropdown-item" href="#">Historical Fiction</a></li>
+                        <li><a class="dropdown-item" href="#">Non-Fiction</a></li>
+                        <li><a class="dropdown-item" href="#">Self-Help</a></li>
+                        <li><a class="dropdown-item" href="#">Crime</a></li>
+                        <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        <li><a class="dropdown-item" href="#">Poetry</a></li>
+                        <li><a class="dropdown-item" href="#">Biography/Autobiography</a></li>
+                        <li><a class="dropdown-item" href="#">Science</a></li>
+                        <li><a class="dropdown-item" href="#">Graphic Novels</a></li>
+                        <li><a class="dropdown-item" href="#">Philosophy</a></li>
+                        <li><a class="dropdown-item" href="#">Religious</a></li>
+                        <li><a class="dropdown-item" href="#">Dystopian</a></li>
+                        <li><a class="dropdown-item" href="#">Humor</a></li>
+                        <li><a class="dropdown-item" href="#">Western</a></li>
+                        <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputNumber4" class="form-label">Number Of Pages</label>
+                <input type="number" class="form-control" id="inputNumber4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Width Ratio Of The Pages Of The Book</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">PDF Of The Book</label>
+                <input type="file" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <h6 class="publish_radio">Is your Book already published offline ?</h6>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Yes
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                </label>
+            </div>
+            <div class="col-md-6">
+                <label for="inputNumber56" class="form-label">Publishing House</label>
+                <input type="text" class="form-control" id="inputNumber56">
+            </div>
+            <div class="col-md-6">
+                <label for="inputNumber57" class="form-label">Year Published</label>
+                <input type="number" class="form-control" id="inputNumber57">
+            </div>
+            <div class="col-12">
+                <h6 class="publish_radio">Do you want us to publish your book for free in E-Book format on our website ?
+                </h6>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Yes
+                </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input checkBox" type="checkbox" value="" id="flexCheckChecked1">
+                <label class="form-check-label checkBoxContent2 mx-4" for="flexCheckChecked">
+                    Publish on Amazon Kindle
+                </label>
+            </div>
+            <div class="col-12 my-3 dff">
+                <input class="form-check-input checkBox" type="checkbox" value="" id="flexCheckChecked2">
+                <label class="form-check-label checkBoxContent mx-4" for="flexCheckChecked2">
+                    <b>*</b> I confirm that the information provided above is correct to the fullest of my knowledge and I agree to face legal consequences if the information is found out to be wrong at a later stage.
+                </label>
+            </div>
+            <div class="col-12 my-2">
+                <button type="submit" class="btn btn-primary" onclick="requestToPublish2()" id="requestToPublish" disabled>Request to Publish</button>
+            </div>
+        
+            <script>
+                // JavaScript to enable/disable the "Request to Publish" button
+                const checkbox2 = document.getElementById("flexCheckChecked2");
+                const requestToPublishButton = document.getElementById("requestToPublish");
+        
+                checkbox2.addEventListener("change", function() {
+                    if (checkbox2.checked) {
+                        requestToPublishButton.removeAttribute("disabled");
+                    } else {
+                        requestToPublishButton.setAttribute("disabled", "true");
+                    }
+                });
+                function requestToPublish2() {
+            // Display a confirmation dialog
+            const confirmation = confirm("Please make sure all the details are completely filled and are correct. Empty fields or wrong information will lead to the cancellation of your verification request");
+
+            // If the user confirms, show the prompt message
+            if (confirmation) {
+                const message = "Your Request has been submitted. Our team of experts is upon it. We'll get back to you within 5 working days";
+                alert(message);
+            }
+        }
+            </script>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

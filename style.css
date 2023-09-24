@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Dancing+Script:wght@500&family=Fredericka+the+Great&family=Fuggles&family=Oswald:wght@300;400&family=Poiret+One&family=Shadows+Into+Light+Two&family=Syncopate&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap');
+
+/* 
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Fuggles', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'VT323', monospace;
+*/
+
+:root {
+    --bg-color: white;
+    --bg-color1: rgb(246, 246, 246);
+    --bg-color2: rgb(233, 233, 233);
+    --bg-color3: rgb(225, 225, 225);
+    --color: rgb(30, 30, 33);
+    --color1: rgb(21, 21, 23);
+    --color2: rgb(20, 20, 24);
+    --page_height: calc(100vh - 100px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color);
+}
+
+.logo {
+    height: 110px;
+    width: 110px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header {
+    height: 120px;
+    width: 100vw;
+    background-color: var(--bg-color1);
+    /* background-color: rgb(166, 214, 236); */
+}
+
+.header > a {
+    text-decoration: none;
+}
+
+.web_name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    height: 100%;
+    width: 400px;
+    /* background-color: red; */
+}
+
+.web_items_container {
+    justify-content: flex-end;
+    height: 100%;
+    width: calc(100vw - 400px);
+    padding-right: 50px;
+    /* background-color: red; */
+}
+
+.web_item {
+    height: 100%;
+    width: 120px;
+    margin: 0 1px;
+    /* background-color: blue; */
+}
+
+#web_item5 {
+    width: 250px;
+    /* background-color: yellow; */
+}
+
+.web_item_link {
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: yellow; */
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    transition: 0.3s;
+    color: var(--color);
+}
+
+.web_item_link span {
+    height: 2px;
+    width: 0;
+    transition: 0.2s;
+    background-color: var(--color2);
+    border-radius: 20px;
+}
+
+.web_item_link:hover .web_span1 {
+    width: 45px;
+}
+.web_item_link:hover .web_span2 {
+    width: 60px;
+}
+.web_item_link:hover .web_span3 {
+    width: 45px;
+}
+.web_item_link:hover .web_span4 {
+    width: 80px;
+}
+.web_item_link:hover .web_span5 {
+    width: 220px;
+}
+
+.container {
+    height: var(--page_height);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background-color: red; */
+}
+
+.web_page {
+    min-height: var(--page_height);
+    /* width: 100vw; */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* width: 15px; */
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background: var(--bg-color2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-color3); 
+} */
+
+.webpage_divider {
+    width: 100vw;
+    height: 1px;
+    background-color: var(--color2);
+}
+
+.author {
+    flex-direction: column;
+}
+
+.author_head {
+    width: 84vw;
+    margin: 20px 0;
+}
+
+.dropdown {
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+.btn_dropdown {
+    width: 100%;
+    background-color: white;
+}
+
+.publish_radio {
+    font-weight: 400;
+}
+
+#flexRadioDefault2 {
+    margin-left: 100px;
+}
+
+#inputAddress5 {
+    margin-bottom: 100px;
+}
+
+.checkBoxContent, .checkBoxContent  {
+    color: red;
+}
