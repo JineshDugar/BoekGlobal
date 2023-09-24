@@ -18,9 +18,9 @@ font-family: 'VT323', monospace;
     --bg-color1: rgb(246, 246, 246);
     --bg-color2: rgb(233, 233, 233);
     --bg-color3: rgb(225, 225, 225);
-    --color: rgb(30, 30, 33);
-    --color1: rgb(21, 21, 23);
-    --color2: rgb(20, 20, 24);
+    --color: rgb(44, 36, 36);
+    --color1: rgb(29, 25, 25);
+    --color2: rgb(99, 57, 153);
     --page_height: calc(100vh - 100px);
 }
 
@@ -99,19 +99,19 @@ font-family: 'VT323', monospace;
 }
 
 .web_item_link:hover .web_span1 {
-    width: 45px;
+    width: 65px;
 }
 .web_item_link:hover .web_span2 {
-    width: 60px;
+    width: 115px;
 }
 .web_item_link:hover .web_span3 {
-    width: 45px;
+    width: 65px;
 }
 .web_item_link:hover .web_span4 {
-    width: 80px;
+    width: 100px;
 }
 .web_item_link:hover .web_span5 {
-    width: 220px;
+    width: 230px;
 }
 
 .container {
